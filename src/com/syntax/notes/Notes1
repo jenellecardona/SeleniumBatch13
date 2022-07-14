@@ -1,0 +1,55 @@
+What automation tools we know about?
+-Selenium, cucumber, TestNG, JUnit, Katalon, UFT/QTP
+
+Level of testing
+-unit testing
+-integration testing
+-acceptance testing
+-system testing
+
+Types of testing
+-functional testing
+-non-functional testing
+~performance testing - load or stress performance of the application in a severe load
+~security testing - how easy is your application to hack
+
+WHat is Selenium?
+-selenium is a set of tools which help ud to automate web applications
+
+Selenium Components:
+1.Selenium IDE(Integrated development enviorment) -platform where we can code
+2.Selenium Grid -Firefox plug-in
+3. Selenium WebDriver
+4. Selenium RC -Remote control/remote server
+
+What is Selenium WebDriver?
+It is an open source automation tool which allows us to perform actions on a web applications. Web Driver is an interface.
+
+
+Advantages of selenium:
+-open source
+-works with different browsers and supports cross browsing testing
+-OS independent
+-works with different programming languages -works with different programming languages
+
+Disadvantages of Selenium:
+-can not test desktop applications
+-no technical support
+-there is no built in reports
+-can not test images, videos or captcha
+
+get() vs navigate()
+
+-navigate() can go back forward and refresh the page
+-get() will wait for the page to fully load whereas navigate will not wait
+-get will not keep the history of the browser whereas navigate will
+
+close() vs quick()
+
+-close will onlu close the current tab
+-quit will close the whole browser
+
+fullscreen() maximize()
+maximize will maximize the browser and the navigate bar is still visable.
+fullscreen will take up the whole screen and the navigation var will disappear
+

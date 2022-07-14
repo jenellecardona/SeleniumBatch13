@@ -1,0 +1,41 @@
+
+What is a WebElement
+anything we see on the web page is considered to be a web element
+
+HTML?
+HyperText Markup Language
+
+What is DOM (Document Object Model)?
+Browsers internal view of the webpage
+INternale view of the webpage
+Also called as developers tools or dev tools
+Document-->a simple html document which represents the page we are inspecting
+Object-->any line in html is considered to be an Object
+Model-->it is just a layout of the html
+
+in order to work with objects in selenium we need to identify the locators.
+
+A locator is an address or a position of a webelement on the webpage. It is used to locate or identify webelements on the webpage.
+(shows the locations of the elements we want to interact with.)
+
+8 locators:
+1. ID
+2. Name
+3. Tag Name
+4. xPath
+5. LinkText
+6. PartialLinkText
+7. CssSelectors
+8. ClassName
+
+Everytime you try to locate an element always look for the ID first cause it is unique
+
+Why do we need so many locators?
+-developers may not provide all the locators for all the elements
+-some locators may have duplicate values in different nodes
+-some locators may not be applicable for the elements are looking for
+e.g linktext and partialLinkText are only used for links
+
+"a" tag is also called an anchor tag
+
+if 2 or more elements have same attributes and attribute values selenium will only

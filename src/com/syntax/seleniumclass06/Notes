@@ -1,0 +1,24 @@
+ALERTS:
+Alerts is a pop up message. Alerts take complete focus off our main page that we are on.
+We can not proceed until we it is handled.
+
+
+
+windows based alerts
+WEB BASED/HTML ALERTS- we can simply inspect those alerts and perform actions needed
+JAVASCRIPT/BROWSER ALERT- We can handle
+Since this is a part of the browser we will not be able to inspect it
+WINDOWS BASED ALERT - we can not handle these alerts through selenium
+
+Anything that is a part of the webpage is inspectable
+
+TYPES OF JAVASCRIPT ALERTS:
+1. Simple Alert - click ok
+2. Confirmation Alert-either accept or dismiss
+3. prompt alert- enter the text and then click ok or cancel
+
+To handle JavaScript Alerts we only have 4 methods:
+1. accept()
+2. dismiss()
+3. getText()
+4. sendKeys()

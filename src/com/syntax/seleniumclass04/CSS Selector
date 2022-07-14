@@ -1,0 +1,56 @@
+CSS Selector (Cascading Styling Sheet)
+it is another way of locating elements on the web page.
+
+Syntax:
+tagname[attribute = 'attribute value ']
+
+i.e input[value = 'LOGIN']
+
+CSS does not allow us to locate the elements by its text.
+
+Shortcuts for CSS:
+**you can only use classname and ID shortcut
+
+shortcut for the class name =>  "."
+syntax=>  tagname.classNameValue
+
+shortcut for ID => "#"
+Syntax=>  tagname#txtPassword
+
+contains() method in css:
+
+* symbol will represent contains method
+tagname[attribute *= 'partial attribute value']
+input[placeholder *= 'phone']
+starts-with method in css:
+
+starts-with() method in css:
+
+^ (Circumflex) symbol represents starts-with method
+tagname[attribute ^= 'starting attribute value']
+i.e   input[aria-label ^= 'Pass']
+
+ends-with method in css:
+$ (Symbol that represents ends-with method in css)
+i.e  a[href $= 'login']
+
+Xpath vs CSS
+1. CSS can not locate the elements by text whereas xpath can
+2. CSS has shortcuts
+3. Xpath does not have ends-with method
+4. CSS is faster than Xpath in locating elements
+
+
+WebElements Commands:
+consists of several methods where we can perform an action and get the element state on the webpage
+
+isEnabled() ==> boolean
+isDisplayed() ==> boolean
+isSelected() ==> boolean
+clear() ==> void
+getText() ==> String
+getAttribute() ==> String
+submit() ==> void
+
+Something to keep in mind when we use method overriding is that
+If the method cannot be inherited or is declared final then it cannot be overridden.

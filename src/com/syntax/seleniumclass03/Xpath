@@ -1,0 +1,56 @@
+In HTML DOM:
+Purple => Tag
+Brown => Attributes
+
+
+Why do we need Xpath and CSS Selector?
+Developers may not provide all the locators in html
+by using xpath and css we can identify elements with any given attributes
+
+What is an Xpath?
+Xpath is like a query language which helps us to identify
+
+Types of Xpath:
+Absolute Xpath => starts from the starting node of the html
+                it always starts with a single slash (/)
+                i.e /html/body/div/div/div  (facebook)
+Relative Xpath => it will start from any node in the html
+                   it will always start with double slash
+Syntax for relative Xpath -- //tagname[Aattribute = 'attribute value']
+                            i.e //input[@id = 'email'] (facebook)
+Identifying elements by its text:
+//tagname[text() = 'text value']
+i.e //a[text() = 'Create new account'] (facebook)
+//h2[text() = 'Connect with friends and the world around you on Facebook.']
+
+Identifying elements by using contains method:
+//tagname[contains(@attribute, 'partial attribute value')]
+e.g.
+//input[contains(@placeholder,'Email')]
+e.g.
+//h2[contains(text(), 'the world')]
+
+Starts with will identify elements by its partial starting value
+//tagname[starts-with(@attribute, 'partial starting attribute value')]
+i.e  //input[starts-with(@placeholder, 'Email')]
+
+** ends-with was used in Xpath 1.0, we are using 2.0 and this method is not available
+
+Advanced Xpath:
+is based on parent, child and sibling relationships
+Identifying element by following sibling
+//tagname[@attribute = 'attribute value']/following-sibling::tagname
+
+Identifying elements by proceeding siblings:
+//tagname[@attribute = 'attribute value']/proceeding-sibling::tagname
+
+Identifying elements by its parent:
+//tagname[@attribute = 'attribute value']/parent::tagname
+i.e  //span[text() = '& Orders']/parent::a
+
+Identifying elements by its ancestors:
+//tagname[@attribute = 'attribute value']/ancestor::tagname
+i.e  //input[@id = 'email']/ancestor::div
+
+identifying elements by its index:
+(//img[@class = 'ui-datepicker-trigger'])[1]
