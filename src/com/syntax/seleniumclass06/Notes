@@ -22,3 +22,20 @@ To handle JavaScript Alerts we only have 4 methods:
 2. dismiss()
 3. getText()
 4. sendKeys()
+
+FRAMES:
+Frame is a separate independent window in our webpage
+Frames allow devs to represent multiple vies on one page
+
+3 ways to interact or to switch to a frame
+1. by index
+2. by name or id
+3. by webelement
+
+In Alerts => switch to an alert manually and gets switched automatically once you've acknowledged the a;ert
+In Frames ==> switch to frame manually and switch back to the main page manually as well.
+
+Interview Question:
+How do you handle alerts in Selenium?
+We handle alerts by using alert interface
+

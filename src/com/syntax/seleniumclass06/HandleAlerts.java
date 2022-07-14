@@ -16,8 +16,21 @@ public class HandleAlerts {
         WebElement simpleAlertButton=driver.findElement(By.id("alert"));
         simpleAlertButton.click();
         Thread.sleep(2000);
-        Alert alert=driver.switchTo().alert();
+        Alert alert=driver.switchTo().alert();//gives us an alert object
         alert.accept();
+
+        Alert confirmAlertButton=driver.switchTo().alert();
+        String confirmAlertText= confirmAlertButton.getText();
+        System.out.println(confirmAlertText);
+        confirmAlertButton.dismiss();
+
+        WebElement promptAlertButton= driver.findElement(By.id("prompt"));
+        promptAlertButton.click();
+        Alert promptAlert=driver.switchTo().alert();
+        promptAlert.sendKeys("Test");
+        promptAlert.accept();
+
+
 
 
 
